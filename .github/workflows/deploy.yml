@@ -19,9 +19,11 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+          cache-dependency-path: package-lock.json
 
+      # We use 'npm install' instead of 'npm ci' because a package-lock.json might not exist yet
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build
         run: npm run build
