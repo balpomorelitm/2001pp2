@@ -32,7 +32,7 @@ export const questions: Question[] = [
   },
   {
     id: 5,
-    text: "¿Qué solías hacer los veranos para no morir de aburrimiento de niño?",
+    text: "¿Qué solías hacer los veranos para no morir de aburrimiento de niñ@?",
     unit: "9",
     hintTitle: "Hábitos en el pasado (Imperfecto)",
     hintContent: <p><em>Molestaba a mi hermana, veía la tele todo el día, comía arena...</em></p>
@@ -262,7 +262,7 @@ export const spareQuestions: Question[] = [
     },
     {
         id: 101,
-        text: "Canta el 'Cumpleaños Feliz' en español como si fueras un cantante de ópera.",
+        text: "Canta el 'Cumpleaños Feliz' en español como un cantante de ópera.",
         unit: "EXTRA",
         hintTitle: "Imperativo + Voz",
         hintContent: <p>¡Canta fuerte!</p>
@@ -318,7 +318,7 @@ export const spareQuestions: Question[] = [
     },
     {
         id: 109,
-        text: "Haz como si fueras un gato y pide comida en español.",
+        text: "Haz como un gato y pide comida en español.",
         unit: "EXTRA",
         hintTitle: "Roleplay Animal",
         hintContent: <p><em>Miau, tengo hambre, dame pescado.</em></p>
@@ -353,7 +353,7 @@ export const spareQuestions: Question[] = [
     },
     {
         id: 114,
-        text: "Manda callar a la clase como si fueras una abuela enfadada.",
+        text: "Manda callar a la clase como una abuela enfadada.",
         unit: "EXTRA",
         hintTitle: "Imperativo",
         hintContent: <p><em>¡Niños, callaos ya! ¡Qué dolor de cabeza!</em></p>
