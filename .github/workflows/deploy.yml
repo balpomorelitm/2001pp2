@@ -18,11 +18,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
+          # Hemos quitado la línea de 'cache' para evitar errores si no hay lockfile
 
-      # We use 'npm install' instead of 'npm ci' because a package-lock.json might not exist yet
       - name: Install dependencies
+        # Usamos 'npm install' porque genera el lockfile si no existe
         run: npm install
 
       - name: Build
