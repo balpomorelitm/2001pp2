@@ -235,10 +235,10 @@ export const questions: Question[] = [
   // NEW SQUARE 33
   {
     id: 33,
-    text: "Estás muy nervioso antes del examen. Describe qué sientes.",
-    unit: "8",
-    hintTitle: "Emociones y Nervios",
-    hintContent: <ul className="list-disc pl-5"><li><strong>Estoy</strong> nervioso/a.</li><li><strong>Tengo</strong> miedo.</li><li><strong>Me pongo</strong> rojo/a.</li></ul>
+    text: "¡PREGUNTA FINAL! Convence al profesor dormido para tener una A+.",
+    unit: "8 + 9 + 10",
+    hintTitle: "Persuasión Final",
+    hintContent: <p><em>Profe, despierta... He estudiado mucho, soy buena persona y a veces hago los deberes, ¿Quieres un café? ¿Podrías darme una buena nota?...</em></p>
   },
   // FINAL SQUARE (TEACHER)
   {
