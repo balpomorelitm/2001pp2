@@ -45,6 +45,9 @@ function App() {
   // Refs for rendering tokens on board
   const boardRef = useRef<HTMLDivElement>(null);
   
+  // Ref to lock prison logic and prevent loops
+  const processingSkipRef = useRef(false);
+
   // Win logic
   const { width, height } = useWindowSizeCustom();
 
@@ -100,15 +103,38 @@ function App() {
 
   const currentPlayer = players[currentPlayerIndex];
 
+  // Reset the skip processing lock whenever the player changes
+  useEffect(() => {
+    processingSkipRef.current = false;
+  }, [currentPlayerIndex]);
+
   // Auto-skip turn if player is in jail
   useEffect(() => {
-    if (gameState === GameState.PLAYING && !waitingForMove && !isModalOpen && currentPlayer.turnsToSkip > 0) {
+    // Only run if playing, not moving, no modal open
+    if (gameState !== GameState.PLAYING || waitingForMove || isModalOpen) return;
+    // Safety check if players are empty (during reset)
+    if (!currentPlayer) return;
+
+    if (currentPlayer.turnsToSkip > 0) {
+       // Stop if we are already handling this skip for this turn
+       if (processingSkipRef.current) return;
+       
+       processingSkipRef.current = true; // Lock
+
        const timer = setTimeout(() => {
            setAlertMessage(`${currentPlayer.name} está en la cárcel. Pierde el turno. (${currentPlayer.turnsToSkip} rondas restantes)`);
            
-           const updatedPlayers = [...players];
-           updatedPlayers[currentPlayerIndex].turnsToSkip -= 1;
-           setPlayers(updatedPlayers);
+           setPlayers(prevPlayers => {
+               const updated = [...prevPlayers];
+               // Update safely
+               if (updated[currentPlayerIndex]) {
+                   updated[currentPlayerIndex] = {
+                       ...updated[currentPlayerIndex],
+                       turnsToSkip: updated[currentPlayerIndex].turnsToSkip - 1
+                   };
+               }
+               return updated;
+           });
 
            setTimeout(() => {
                setAlertMessage(null);
@@ -117,11 +143,11 @@ function App() {
        }, 500);
        return () => clearTimeout(timer);
     }
-  }, [currentPlayerIndex, gameState, players, waitingForMove, isModalOpen]);
+  }, [currentPlayerIndex, gameState, players, waitingForMove, isModalOpen, currentPlayer]);
 
 
   const handleRoll = (roll: number) => {
-    if (waitingForMove || isModalOpen || currentPlayer.turnsToSkip > 0) return;
+    if (waitingForMove || isModalOpen || (currentPlayer && currentPlayer.turnsToSkip > 0)) return;
 
     let nextPosition = currentPlayer.position + roll;
 
@@ -324,7 +350,7 @@ function App() {
                         Reiniciar
                     </button>
                     <div className="flex gap-2 text-sm font-bold bg-white text-orange-800 px-3 py-1 rounded-full border-2 border-orange-800 shadow-sm">
-                    Turno: {players[currentPlayerIndex].name}
+                    Turno: {players[currentPlayerIndex]?.name}
                     </div>
                 </>
             )}
@@ -434,7 +460,7 @@ function App() {
                 <span className="text-8xl mb-4">🎓</span>
                 <h2 className="text-4xl font-black text-slate-800 mb-2 font-['Fredoka']">¡APROBADO!</h2>
                 <p className="text-xl font-bold text-slate-600 mb-6">
-                    {players[currentPlayerIndex].name} ha visto el examen.
+                    {players[currentPlayerIndex]?.name} ha visto el examen.
                 </p>
                 <div className="bg-green-100 text-green-800 p-4 border-2 border-green-200 rounded font-mono text-sm">
                     SPAN2001 FINAL GRADE:<br/>
@@ -456,7 +482,7 @@ function App() {
         )}
 
         {/* Board & Game Area */}
-        {gameState === GameState.PLAYING && (
+        {gameState === GameState.PLAYING && currentPlayer && (
           <div className="flex flex-col-reverse md:flex-row gap-8 items-start justify-center">
             
             {/* Board Area */}
@@ -537,7 +563,7 @@ function App() {
             question={activeQuestion} 
             isOpen={isModalOpen} 
             onClose={handleQuestionComplete}
-            playerName={players[currentPlayerIndex].name}
+            playerName={players[currentPlayerIndex]?.name}
         />
       )}
     </div>
