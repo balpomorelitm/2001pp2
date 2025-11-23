@@ -39,36 +39,36 @@ export const questions: Question[] = [
   },
   {
     id: 6,
-    text: "Estás en el baño público y no hay papel. Grita una historia de ayuda a tu amigo.",
+    text: "Estás en el baño público y no hay papel. Pide ayuda a tu amigo.",
     unit: "10",
-    hintTitle: "Narración dramática",
-    hintContent: <ul className="list-disc pl-5"><li><strong>De repente</strong> me di cuenta...</li><li><strong>Entonces</strong> grité...</li><li><strong>Resulta que</strong> nadie me oyó.</li></ul>
+    hintTitle: "Imperativo",
+    hintContent: <ul className="list-disc pl-5"><li><strong>Por favor, estoy en la 💩.</strong> Compra algo de papel...</li><li><strong>y</strong> Cierra la puerta...</li></ul>
   },
   {
     id: 7,
-    text: "¿Alguna vez has vomitado en público? ¿Cómo pasó? Y si no, ¿alguna vez has llegado muy tarde a algo? ",
+    text: "¿Alguna vez has vomitado🤢🤮 en público? ¿Cómo pasó? Y si no, ¿alguna vez has llegado muy tarde⏰ a algo? ",
     unit: "8 + 10",
     hintTitle: "Salud + Narración",
     hintContent: <p>Combina vocabulario del cuerpo con el pretérito: <em>Comí algo malo y vomité en el zapato de mi profesora.</em></p>
   },
   {
     id: 8,
-    text: "Compara la música de hoy (que es horrible) con la de antes.",
+    text: "Compara la música de hoy (que es 💩) con la de antes.",
     unit: "9",
     hintTitle: "Antes vs. Ahora",
     hintContent: <ul className="list-disc pl-5"><li><strong>Antes</strong> la música tenía letra.</li><li><strong>Hoy en día</strong> es solo ruido.</li></ul>
   },
   {
     id: 9,
-    text: "Te quedaste dormido en clase. Explica qué estaba pasando cuando te despertaste.",
+    text: "Ayer te quedaste dormido en clase. Explica qué estaba pasando cuando te despertaste.",
     unit: "10",
     hintTitle: "Estaba + Gerundio (Interrupción)",
-    hintContent: <p><em>El profesor estaba gritando mi nombre cuando abrí los ojos.</em></p>
+    hintContent: <p><em>Cuando abrí los ojos...el profesor estaba gritando mi nombre .</em></p>
   },
   // BONUS SQUARE 1
   {
     id: 10,
-    text: "¡El profe te dice: 'Marca la asistencia y tira los dados de nuevo'!",
+    text: "¡El profe te dice: 'Marca la asistencia y tira los dados🎲 de nuevo'!",
     unit: "EXTRA",
     hintTitle: "¡BONUS!",
     hintContent: <p>Has tenido suerte. ¡Tira otra vez!</p>,
@@ -90,42 +90,42 @@ export const questions: Question[] = [
   },
   {
     id: 13,
-    text: "Tu compañero está histérico por el examen PP2. Dile que se calme.",
+    text: "Tu compañero está histérico/muy nervioso😰 por el examen PP2. Dile que se calme con algunos consejos e imperativo.",
     unit: "8",
     hintTitle: "Estados de ánimo + Consejos",
     hintContent: <p><em>¡Cállate un poco! ¡Relájate! ¡No seas pesado!</em></p>
   },
   {
     id: 14,
-    text: "Estabas besando a tu novio/a y de repente... (completa la frase).",
+    text: "(completa la frase) Estaba besando a mi novio/a y de repente... .",
     unit: "10",
     hintTitle: "Imperfecto vs Pretérito",
     hintContent: <p><em>...entró mi madre / su perro me mordió / se le cayeron los dientes.</em></p>
   },
   {
     id: 15,
-    text: "¿Qué te da asco? ¿Qué te da miedo?",
+    text: "¿Qué te da asco? ¿Qué te da miedo?🤢😱",
     unit: "10",
     hintTitle: "Expresar emociones",
     hintContent: <ul className="list-disc pl-5"><li><strong>Me da asco</strong> la gente que escupe.</li><li><strong>Me dan miedo</strong> las cucarachas voladoras.</li></ul>
   },
   {
     id: 16,
-    text: "¿Qué estabas haciendo ayer a las 3 de la mañana? (Di la verdad).",
+    text: "¿Qué estabas haciendo ayer a las 3 de la mañana? (Di la verdad).👨‍⚖️",
     unit: "10",
     hintTitle: "Estar + Gerundio (Pasado)",
     hintContent: <p><em>Estaba durmiendo (mentira), estaba viendo TikToks, estaba comiendo pizza fría.</em></p>
   },
   {
     id: 17,
-    text: "Tienes gripe y mocos. Describe tus síntomas de forma muy dramática.",
+    text: "Tienes gripe y mocos. Describe tus síntomas de forma muy dramática, como un actor que va a morir en el teatro.",
     unit: "8",
     hintTitle: "Enfermedades y Síntomas",
     hintContent: <p><em>Me estoy muriendo, no puedo respirar, me duele hasta el pelo.</em></p>
   },
   {
     id: 18,
-    text: "Debate: ¿Es mejor vivir con tus padres hasta los 40 años?",
+    text: "Debate(todos en el grupo): ¿Es mejor vivir con tus padres hasta los 40 años?",
     unit: "9",
     hintTitle: "Argumentar y Debatir",
     hintContent: <ul className="list-disc pl-5"><li><em>¡Ni hablar! Es horrible.</em></li><li><em>Depende, si cocinan bien...</em></li></ul>
@@ -135,11 +135,11 @@ export const questions: Question[] = [
     text: "Cuenta una travesura (mischief) que hiciste de pequeño.",
     unit: "9 + 10",
     hintTitle: "Recuerdos",
-    hintContent: <p><em>Rompí la ventana del vecino, pinté al gato de azul...</em></p>
+    hintContent: <p><em>una vez rompí la ventana del vecino, pinté al gato de azul...</em></p>
   },
   {
     id: 20,
-    text: "Tu amigo ha suspendido el examen con un 0. Reacciona.",
+    text: "Tu amigo ha suspendido el examen con un 0 de 100. Reacciona.",
     unit: "10",
     hintTitle: "Reaccionar",
     hintContent: <ul className="list-disc pl-5"><li>¡Qué pena!</li><li>¡Qué desastre!</li><li>¡Qué vergüenza! (bromeando)</li></ul>
@@ -168,7 +168,7 @@ export const questions: Question[] = [
   // BONUS SQUARE 2
   {
     id: 24,
-    text: "El profe dice: 'Este audio no es difícil, tira el dado de nuevo'.",
+    text: "El profe dice: 'Este audio es un poco difícil, tira el dado🎲 de nuevo'.",
     unit: "EXTRA",
     hintTitle: "¡BONUS!",
     hintContent: <p>¡Menos mal! Tienes otra oportunidad.</p>,
@@ -194,7 +194,7 @@ export const questions: Question[] = [
     text: "¿No has hecho los deberes? A la cárcel, por perezoso.",
     unit: "CASTIGO",
     hintTitle: "¡A LA CÁRCEL!",
-    hintContent: <p>Pierdes 2 turnos. Aprovecha para estudiar.</p>,
+    hintContent: <p>Pierdes 2 turnos. Aprovecha para estudiar y hacer los deberes.</p>,
     specialType: 'PRISON'
   },
   {
@@ -202,11 +202,11 @@ export const questions: Question[] = [
     text: "Tuviste un accidente por mirar el móvil andando. Cuéntalo.",
     unit: "10",
     hintTitle: "Sucesos y Narración",
-    hintContent: <p><em>Me choqué con una farola (lamp post), todo el mundo se rio de mí.</em></p>
+    hintContent: <p><em>El otro día me choqué con una farola (lamp post), todo el mundo se rio de mí.</em></p>
   },
   {
     id: 29,
-    text: "¿Qué hacías mientras el Pablo explicaba la historia superaburrida de la Transición española?",
+    text: "¿Qué hacías mientras el profe explicaba la historia superaburrida de la Transición española?",
     unit: "10",
     hintTitle: "Acciones simultáneas (Imperfecto)",
     hintContent: <p><em>Mientras él hablaba, yo estaba comprando ropa online.</em></p>
@@ -220,17 +220,17 @@ export const questions: Question[] = [
   },
   {
     id: 31,
-    text: "Inventa un aparato para copiar en el examen PP2 sin que el profe te vea.",
+    text: "¿Cómo eras físicamente con 10 años?",
     unit: "9",
-    hintTitle: "Inventos Futuros",
-    hintContent: <p><em>Unas gafas con las respuestas, un boli que habla bajito...</em></p>
+    hintTitle: "Descripciones del pasado",
+    hintContent: <p><em>De niña, llevaba unas gafas muy grandes, estaba un poco gordita y tenia el pelo corto...</em></p>
   },
   {
     id: 32,
-    text: "Resume tu película favorita pero haz que suene aburrida.",
+    text: "Resume tu película favorita pero ¡tiene que sonar aburrida!.",
     unit: "10",
     hintTitle: "Narrar una historia",
-    hintContent: <p><em>Unos tipos anduvieron mucho tiempo para tirar un anillo a un volcán. Fin.</em></p>
+    hintContent: <p><em>Unos tíos bajitos estuvieron andando muuuucho tiempo para tirar un anillo 💍 a un volcán 🌋. Fin.</em></p>
   },
   // NEW SQUARE 33
   {
@@ -243,10 +243,10 @@ export const questions: Question[] = [
   // FINAL SQUARE (TEACHER)
   {
     id: 34,
-    text: "¡PREGUNTA FINAL! Convence al profesor dormido para que te ponga un A+.",
+    text: "¡PREGUNTA FINAL! Convence al profesor dormido para tener una A+.",
     unit: "8 + 9 + 10",
     hintTitle: "Persuasión Final",
-    hintContent: <p><em>Profe, despierta... He estudiado mucho, soy buena persona, te invito a un café...</em></p>
+    hintContent: <p><em>Profe, despierta... He estudiado mucho, soy buena persona y a veces hago los deberes, ¿Quieres un café? ¿Podrías darme una buena nota?...</em></p>
   }
 ];
 
@@ -269,7 +269,7 @@ export const spareQuestions: Question[] = [
     },
     {
         id: 102,
-        text: "Imita al profesor de español cuando se enfada. ¿Qué dice?",
+        text: "Imita al profesor de español. ¿Qué dice?",
         unit: "EXTRA",
         hintTitle: "Imitación",
         hintContent: <p>Usa frases típicas: <em>¡Silencio! ¡Abrid el libro!</em></p>
@@ -318,17 +318,17 @@ export const spareQuestions: Question[] = [
     },
     {
         id: 109,
-        text: "Haz como un gato y pide comida en español.",
+        text: "Haz como un gato 😸 y pide comida en español.",
         unit: "EXTRA",
         hintTitle: "Roleplay Animal",
         hintContent: <p><em>Miau, tengo hambre, dame pescado.</em></p>
     },
     {
         id: 110,
-        text: "Insulta 'amistosamente' a un compañero de clase.",
+        text: "Insulta 'amistosamente' al profe.",
         unit: "EXTRA",
         hintTitle: "Vocabulario 'malo'",
-        hintContent: <p><em>Eres un melón, eres un cabeza de chorlito.</em></p>
+        hintContent: <p><em>El profe no es feo, es diferente. Es un poco tontito, pero es normal porque es español.</em></p>
     },
     {
         id: 111,
@@ -346,16 +346,16 @@ export const spareQuestions: Question[] = [
     },
     {
         id: 113,
-        text: "Pide perdón a tu pie por pisarlo todo el día.",
+        text: "Levántate y toca el ordenador del profesor con la cabeza. Luego dile "No puedo más".",
         unit: "EXTRA",
-        hintTitle: "Disculpas",
-        hintContent: <p><em>Lo siento mucho, pie querido...</em></p>
+        hintTitle: "Eso",
+        hintContent: <p><em>💻🤯No puedo más...</em></p>
     },
     {
         id: 114,
         text: "Manda callar a la clase como una abuela enfadada.",
         unit: "EXTRA",
         hintTitle: "Imperativo",
-        hintContent: <p><em>¡Niños, callaos ya! ¡Qué dolor de cabeza!</em></p>
+        hintContent: <p><em>¡Niños, callaos ya! ¡Qué dolor de cabeza! ¡Qué pesados son estos jóvenes!</em></p>
     }
 ];
