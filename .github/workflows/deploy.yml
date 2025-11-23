@@ -18,10 +18,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          # Hemos quitado la línea de 'cache' para evitar errores si no hay lockfile
+          # Cache eliminado para evitar errores de lockfile
 
       - name: Install dependencies
-        # Usamos 'npm install' porque genera el lockfile si no existe
         run: npm install
 
       - name: Build
