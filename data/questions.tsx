@@ -346,7 +346,7 @@ export const spareQuestions: Question[] = [
     },
     {
         id: 113,
-        text: "Levántate y toca el ordenador del profesor con la cabeza. Luego dile "No puedo más'.",
+        text: "Levántate y toca el ordenador del profesor con la cabeza. Luego dile -No puedo más-.",
         unit: "EXTRA",
         hintTitle: "Eso",
         hintContent: <p><em>💻🤯No puedo más...</em></p>
