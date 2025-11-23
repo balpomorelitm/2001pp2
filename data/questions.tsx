@@ -297,7 +297,7 @@ export const spareQuestions: Question[] = [
     },
     {
         id: 106,
-        text: "Vende tu bolígrafo a tu compañero como si fuera un objeto mágico.",
+        text: "Vende tu bolígrafo a tu compañero como un objeto mágico.",
         unit: "EXTRA",
         hintTitle: "Persuasión",
         hintContent: <p><em>Este boli escribe solo los exámenes... ¡Cómpralo!</em></p>
